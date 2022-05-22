@@ -10,11 +10,12 @@
 
 /* Web Fonts - NoonNoo */
 @font-face {
-  font-family: 'HallymMjo-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
+
 /* Reset CSS */
 /* 나만의 css 적는 것 추천 */
 * {
@@ -35,10 +36,133 @@ h1, h2, h3, h4, h5, h6{
 
 /* Default CSS */
 body{
-  font-family: 'HallymMjo-Regular', sans-serif;
+  font-family: 'NEXON Lv2 Gothic';
   font-size: 18px;
   line-height: 1.7em;
   margin: 0;
   background-color: #fff;
   color: #222;
+}
+
+/* ####### Header ####### */
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-inner{
+  width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  margin-top: -7px;
+}
+.gnb {
+  float: right;
+}
+.gnb a {
+  margin: 10px;
+  font-size: 16px;
+}
+/* ####### Section : welcome #######*/
+.welcome {
+  height: 90vh;
+  position: relative;
+}
+.slideshow {}
+.welcome-heading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+  text-align: center;
+  width: 750px;
+}
+.welcome-heading span{
+  font-size: 24px;
+}
+.welcome-heading h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.welcome-heading h1 em{
+  display: block;
+  font-style: normal;
+  color: #db4d4b;
+}
+.welcome-heading p{
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.welcome-btns {}
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.5s;
+}
+.btn:hover{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.btn.start {
+  background-color: #0abde3;
+}
+.btn.guide {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Mouse Wheele */
+.mouse {
+  border: 2px solid #ccc;
+  position: absolute;
+  width: 32px;
+  height: 45px;
+  border-radius: 30px;
+  bottom: 100px;
+  left: 250px;
+}
+.wheele {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 5px;
+  left: 12px;
+  top: 10px;
+  animation: wheele 1s linear infinite;
+}
+@keyframes wheele{
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+/* ####### Slick Custom CSS #######*/
+.slideshow .slick-arrow {
+  border: 1px solid #000;
+  display: none !important;
+}
+.slideshow * {
+  outline: none;
 }
