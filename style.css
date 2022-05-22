@@ -1,0 +1,44 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Web Fonts - NoonNoo */
+@font-face {
+  font-family: 'HallymMjo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+/* Reset CSS */
+/* 나만의 css 적는 것 추천 */
+* {
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #222;
+}
+button, input{
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* Default CSS */
+body{
+  font-family: 'HallymMjo-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
