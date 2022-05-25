@@ -16,5 +16,5 @@
 
 ![KermitFreakingOutGIF](https://user-images.githubusercontent.com/83990943/168477090-9a8c00a5-504c-4cdd-96fa-e9459216ab57.gif) 
 
-> **6월 30일까지!! 할수있똬**
+> **6월 30일까지!
 
