@@ -44,6 +44,31 @@ body{
   color: #222;
 }
 
+/* Common CSS*/
+.headeline-share {
+  text-align: center;
+}
+.headeline-share  h1 {
+  font-size: 44px;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.headeline-share  h1:after {
+content: '';
+position: absolute;
+height: 5px;
+width: 80px;
+background: linear-gradient(to right, #1f8de6, #5ed6fe);
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+.headeline-share  p {
+  font-size: 20px;
+}
+
+
 /* ####### Header ####### */
 header{
   position: fixed;
@@ -315,7 +340,29 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   color: #34495e;
 }
 
-
+/* ####### section : Feature #######*/
+.feature {}
+.feature-inner{
+  width: 1300px;
+  margin: auto;
+}
+.feature-content{
+  overflow: hidden;
+  margin: 150px 0;
+}
+.feature-content > div{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.feature-mockup {}
+.feature-about  h2{
+  font-size: 30px;
+}
+.feature-about {
+  padding: 0 70px;
+  padding-top: 80px;
+}
 
 
 
@@ -329,3 +376,18 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .slideshow * {
   outline: none;
 }
+
+
+/* Section Display */
+/*header {display: none;}
+.welcome {display: none;}
+.ceo-access {display: none;}
+.banner {display: none;}*/
+/*.feature {display: none;}*/
+.vision {display: none;}
+.faq {display: none;}
+.review {display: none;}
+.focus {display: none;}
+.guide {display: none;}
+.news {display: none;}
+footer {display: none;}
