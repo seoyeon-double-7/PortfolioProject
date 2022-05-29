@@ -20,3 +20,14 @@ $('#typing').typeIt({
 	breakLines: false, // 줄 바꿈 사용안함
 });
 })
+
+// faq Accordion
+$(function(){
+	$('.faq-desc').eq(0).show()
+	$('.faq-title').click(function(){
+		$(this).next().stop().slideDown()
+		$(this).parent().siblings('.faq-item').children('.faq-desc').slideUp()
+		$(this).parent().addClass('active')
+		$(this).parent().siblings().removeClass('active')
+	})
+})
