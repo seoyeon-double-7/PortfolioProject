@@ -365,7 +365,50 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 }
 
 
+/* ####### Section : vision #######*/
+.vision {}
+.vision-inner {}
+.vision-content {
+  overflow: hidden;
+}
+.vision-content > div {
+  float: left;
+  width: 33.333333333%;
+  height: 400px;
+}
+.vision-item-desc {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-item-headline {
+  width: 60%;
+}
+.vision-item-desc h3{
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.vision-item-desc hr{
+  width: 45px;
+  height: 3px;
+  border: none;
+  background-color: #9b59b6;
+  display: inline-block;
+}
+.vision-item-desc p{
+  margin-top: 0;
+}
+.vision-item-phto {
+}
+.vision-item-phto img{
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
 
+
+/* ####### faq ####### */
 
 
 /* ####### Slick Custom CSS #######*/
@@ -379,12 +422,13 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 
 
 /* Section Display */
+
 /*header {display: none;}
 .welcome {display: none;}
 .ceo-access {display: none;}
-.banner {display: none;}*/
-/*.feature {display: none;}*/
-.vision {display: none;}
+.banner {display: none;}
+.feature {display: none;}
+.vision {display: none;}*/
 .faq {display: none;}
 .review {display: none;}
 .focus {display: none;}
