@@ -4,9 +4,9 @@
 /* XEION CDN */
 @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
-/* Google Web Fonts CDN */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
-/* font-family: 'Noto Sans KR', sans-serif; */
+/* Web Fonts - Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
 
 /* Web Fonts - NoonNoo */
 @font-face {
@@ -16,27 +16,40 @@
   font-style: normal;
 }
 
+/* Seciton Display */
+/* header { display: none; }
+.welcome { display: none; }
+.ceo-access { display: none; }
+.banner { display: none; }
+.feature { display: none; }
+.vision { display: none; }
+.faq { display: none; } */
+.review { display: none; }
+.focus { display: none; }
+.guide { display: none; } 
+.news { display: none; }
+footer { display: none; }
+
 /* Reset CSS */
-/* 나만의 css 적는 것 추천 */
 * {
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: #222;
 }
-button, input{
+button, input {
   outline: none;
 }
-h1, h2, h3, h4, h5, h6{
+h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   font-weight: normal;
   line-height: 1.5em;
 }
 
 /* Default CSS */
-body{
-  font-family: 'NEXON Lv2 Gothic';
+body {
+  font-family: 'NEXON Lv2 Gothic', sans-serif;
   font-size: 18px;
   line-height: 1.7em;
   margin: 0;
@@ -44,38 +57,36 @@ body{
   color: #222;
 }
 
-/* Common CSS*/
-.headeline-share {
+/* Common CSS */
+.headline-share {
   text-align: center;
 }
-.headeline-share  h1 {
+.headline-share h1 {
   font-size: 44px;
   position: relative;
-  padding-top: 100px;
   padding-bottom: 20px;
 }
-.headeline-share  h1:after {
-content: '';
-position: absolute;
-height: 5px;
-width: 80px;
-background: linear-gradient(to right, #1f8de6, #5ed6fe);
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
+.headline-share h1:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(to right, #1f8de6, #5ed6fe);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.headeline-share  p {
+.headline-share p {
   font-size: 20px;
 }
 
-
-/* ####### Header ####### */
-header{
+/* ####################### Header ####################### */
+header {
   position: fixed;
   width: 100%;
   z-index: 10;
 }
-.header-inner{
+.header-inner {
   width: 1300px;
   margin: auto;
   overflow: hidden;
@@ -95,8 +106,10 @@ header{
   margin: 10px;
   font-size: 16px;
 }
-/* ####### Section : welcome #######*/
+
+/* ################# section : welcome ################# */
 .welcome {
+  /* border: 5px solid #000; */
   height: 90vh;
   position: relative;
 }
@@ -109,28 +122,27 @@ header{
   text-align: center;
   width: 750px;
 }
-.welcome-heading span{
+.welcome-heading span {
   font-size: 24px;
 }
-.welcome-heading h1{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 65px;
+.welcome-heading h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
   font-weight: 600;
   line-height: 1.2em;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-.welcome-heading h1 em{
+.welcome-heading h1 em {
   display: block;
   font-style: normal;
-  color: #db4d4b;
+  color: #eb4d4b;
 }
-.welcome-heading p{
+.welcome-heading p {
   padding: 0 100px;
   margin-bottom: 50px;
 }
 .welcome-btns {}
-
 .btn {
   display: inline-block;
   width: 160px;
@@ -140,7 +152,7 @@ header{
   margin: 5px;
   transition: 0.5s;
 }
-.btn:hover{
+.btn:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
@@ -154,7 +166,7 @@ header{
 
 /* Mouse Wheele */
 .mouse {
-  border: 2px solid #ccc;
+  border: 2px solid #fff;
   position: absolute;
   width: 32px;
   height: 45px;
@@ -166,13 +178,13 @@ header{
   position: absolute;
   width: 4px;
   height: 15px;
-  background-color: #ccc;
+  background-color: #fff;
   border-radius: 5px;
   left: 12px;
   top: 10px;
-  animation: wheele 1s linear infinite;
+  animation: wheele 1.5s linear infinite;
 }
-@keyframes wheele{
+@keyframes wheele {
   0% {
     top: 10px;
   }
@@ -184,17 +196,17 @@ header{
   }
 }
 
-/* ####### section :ceo-access####### */
+/* ################# section : ceo-access ################# */
 .ceo-access {}
 .ceo-inner,
-.access-inner{
+.access-inner {
   width: 1300px;
   margin: auto;
 }
 .ceo-content {
   overflow: hidden;
   border-bottom: 1px solid #eee;
-  padding : 50px 0
+  padding: 50px 0;
 }
 .ceo-content > div {
   float: left;
@@ -205,15 +217,16 @@ header{
 }
 .ceo-left img {
   width: 30px;
-  filter: invert(49%) sepia(80%) saturate(393%) hue-rotate(93deg) brightness(95%) contrast(93%);
+  filter: invert(57%) sepia(52%) saturate(608%) hue-rotate(93deg) brightness(87%) contrast(89%);
 }
 .ceo-left h3 {
   font-weight: bold;
-} 
+  font-size: 24px;
+}
 .ceo-right {
   text-align: center;
 }
-.ceo-right > div{
+.ceo-right > div {
   float: left;
   padding: 20px;
 }
@@ -226,7 +239,6 @@ header{
 }
 .ceo-msg h3 big {
   display: block;
-
 }
 .ceo-photo {
   width: 40%;
@@ -236,17 +248,20 @@ header{
   width: 100%;
 }
 .access-content {
-  padding : 50px 0;
-  overflow: hidden;
+  padding: 50px 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
-.access-content > div{
+.access-content > div {
   float: left;
   width: 50%;
 }
 .access-left {
   padding-right: 50px;
-  padding-top: 80px;
+  padding-top: 50px;
+}
+.access-left h2 {
+  font-size: 34px;
 }
 .access-right {
   text-align: center;
@@ -259,17 +274,17 @@ header{
   margin-top: 30px;
 }
 
-/* ####### section : banner */
+/* ################# section : banner ################# */
 .banner {
-  /*background: linear-gradient(to right, #69acfe, #6eaefd);*/
+  /* background: linear-gradient(to right, #69acfe, #6eaefd); */
   background: url(images/wave-line.png) no-repeat center right 100px, linear-gradient(to right, #69acfe, #6eaefd);
   background-size: 80px;
 }
-.banner-inner{
+.banner-inner {
   width: 1300px;
   margin: auto;
 }
-.banner-content{
+.banner-content {
   overflow: hidden;
   padding: 40px 0;
 }
@@ -277,7 +292,7 @@ header{
   float: left;
   width: 50%;
 }
-input[name=tabmenu]{
+input[name=tabmenu] {
   display: none;
 }
 .tab-btn {}
@@ -289,8 +304,7 @@ input[name=tabmenu]{
   margin: 5px;
   cursor: pointer;
 }
-
-.tab-btn label em{
+.tab-btn label em {
   background-color: #fff;
   display: inline-block;
   width: 110px;
@@ -299,11 +313,11 @@ input[name=tabmenu]{
   text-align: center;
   padding-top: 20px;
 }
-.tab-btn label em img{
+.tab-btn label em img {
   width: 60px;
-  filter: invert(59%) sepia(92%) saturate(1315%) hue-rotate(189deg) brightness(101%) contrast(102%);
+  filter: invert(63%) sepia(63%) saturate(2002%) hue-rotate(187deg) brightness(98%) contrast(106%);
 }
-.tab-btn label span{
+.tab-btn label span {
   display: block;
   margin-top: 10px;
 }
@@ -331,7 +345,7 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] em {
 }
 input[id=tab1]:checked ~ .tab-btn label[for=tab1] em img,
 input[id=tab2]:checked ~ .tab-btn label[for=tab2] em img,
-input[id=tab3]:checked ~ .tab-btn label[for=tab3] em img{
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] em img {
   filter: invert()
 }
 input[id=tab1]:checked ~ .tab-btn label[for=tab1] span,
@@ -340,32 +354,31 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   color: #34495e;
 }
 
-/* ####### section : Feature #######*/
+/* ################# section : banner ################# */
 .feature {}
-.feature-inner{
+.feature-inner {
   width: 1300px;
   margin: auto;
 }
-.feature-content{
+.feature-content {
   overflow: hidden;
-  margin: 150px 0;
+  margin: 100px 0;
 }
-.feature-content > div{
+.feature-content > div {
   float: left;
   width: 50%;
   text-align: center;
 }
 .feature-mockup {}
-.feature-about  h2{
-  font-size: 30px;
-}
 .feature-about {
   padding: 0 70px;
   padding-top: 80px;
 }
+.feature-about h2 {
+  font-size: 30px;
+}
 
-
-/* ####### Section : vision #######*/
+/* ################# section : vision ################# */
 .vision {}
 .vision-inner {}
 .vision-content {
@@ -373,7 +386,7 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 }
 .vision-content > div {
   float: left;
-  width: 33.333333333%;
+  width: 33.33333333%;
   height: 400px;
 }
 .vision-item-desc {
@@ -385,30 +398,31 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .vision-item-headline {
   width: 60%;
 }
-.vision-item-desc h3{
+.vision-item-desc h3 {
   font-size: 28px;
   margin-bottom: 0;
 }
-.vision-item-desc hr{
+.vision-item-desc hr {
   width: 45px;
   height: 3px;
   border: none;
   background-color: #9b59b6;
   display: inline-block;
 }
-.vision-item-desc p{
+.vision-item-desc p {
   margin-top: 0;
 }
-.vision-item-phto {
+.vision-item-photo {
+  /* background: url(images/vision-01.jpg) no-repeat center center;
+  background-size: cover; */
 }
-.vision-item-phto img{
+.vision-item-photo img {
   width: 100%;
   height: inherit;
   object-fit: cover;
 }
 
-
-/* ####### faq ####### */
+/* ################# section : faq ################# */
 .faq {}
 .faq-inner {
   width: 1300px;
@@ -419,14 +433,12 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   float: left;
   width: 50%;
   padding: 25px;
-  /* .awards-content 위아래롤 움직이는 현상 방지 */
-  min-height: 740px;
+  min-height: 700px; /* .awards-content 위아래로 움직이는 현상 방지 */
 }
 
 /* faq-accordion */
 .faq-accordion {}
 .faq-item {
-  /*border: 1px solid #7dbeff;*/
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -438,11 +450,12 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   color: #4c98e4;
   cursor: pointer;
 }
-.faq-title::after{
+.faq-title:after {
   content: '\f105';
   font-family: fontawesome;
   float: right;
   color: #444;
+  transition: 0.35s;
 }
 .faq-desc {
   display: none;
@@ -450,12 +463,10 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .faq-item.active {
   border: 1px solid #7dbeff;
 }
-.faq-item.active .faq-title:after{
+.faq-item.active .faq-title:after {
   color: #7dbeff;
   transform: rotate(90deg);
-  transition: 0.35s;
 }
-
 
 /* awards-content */
 .awards-content {
@@ -464,9 +475,6 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .award-image {
   position: relative;
   margin-bottom: 40px;
-}
-.award-image img {
-  width: 100%;
 }
 .award-image:after {
   content: 'december 9, 2020';
@@ -482,6 +490,9 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   text-align: center;
   font-size: 16px;
   line-height: 50px;
+}
+.award-image img {
+  width: 100%;
 }
 .awards-content h2 {
   font-size: 36px;
@@ -501,12 +512,31 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .btn-awards:hover {
   color: #fff;
   background-color: crimson;
+  /* border: none; */
   border-color: transparent;
 }
 
 
 
-/* ####### Slick Custom CSS #######*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ▦▦▦▦▦▦▦▦▦ Slick Custom CSS ▦▦▦▦▦▦▦▦▦ */
 .slideshow .slick-arrow {
   border: 1px solid #000;
   display: none !important;
@@ -514,19 +544,3 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .slideshow * {
   outline: none;
 }
-
-
-/* Section Display */
-
-/*header {display: none;}
-.welcome {display: none;}
-.ceo-access {display: none;}
-.banner {display: none;}
-.feature {display: none;}
-.vision {display: none;}
-.faq {display: none;}*/
-.review {display: none;}
-.focus {display: none;}
-.guide {display: none;}
-.news {display: none;}
-footer {display: none;}
