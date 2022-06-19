@@ -12,14 +12,13 @@ $('.slideshow').slick({
 });
 
 
-/* Slick - Review */
-$('.review-slider').slick({
+/* Slick - Review, Guide */
+$('.review-slider, .mockup-slider').slick({
   dots: true,
   infinite: true,
   autoplay: true,
 	autoplaySpeed : 2000,
 });
-
 
 /* TypeIt - Welcome */
 $('#typing').typeIt({
@@ -38,6 +37,16 @@ $(function(){
 		$(this).parent().siblings('.faq-item').children('.faq-desc').slideUp()
 		$(this).parent().addClass('active')
 		$(this).parent().siblings().removeClass('active')
+	})
+
+	/* Video Modal */
+	$('.open-modal').click(function(){
+		$('.video-modal').fadeIn()
+		$('body').addClass('active')
+	})
+	$('.close-modal').click(function(){
+		$('.video-modal').fadeOut()
+		$('body').removeClass('active')
 	})
 })
 

@@ -17,16 +17,16 @@
 }
 
 /* Seciton Display */
-/* header { display: none; }
+/*header { display: none; }
 .welcome { display: none; }
 .ceo-access { display: none; }
 .banner { display: none; }
 .feature { display: none; }
 .vision { display: none; }
 .faq { display: none; }
-.review { display: none; } */
-.focus { display: none; }
-.guide { display: none; } 
+.review { display: none; }
+.focus { display: none; } 
+.guide { display: none; } */
 .news { display: none; }
 footer { display: none; }
 
@@ -55,6 +55,9 @@ body {
   margin: 0;
   background-color: #fff;
   color: #222;
+}
+body.active {
+  overflow: hidden;
 }
 section {
   padding: 100px 0;
@@ -550,6 +553,109 @@ h1.slogan {
 }
 
 /* ############## focus section ############## */
+.focus {}
+.focus-inner {
+  width: 1300px;
+  margin: auto;
+}
+.focus-content {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 50px 0;
+}
+.focus-item {
+  display: inline-block;
+  width: 30%;
+  padding: 0 50px;
+}
+.focus-item img {
+  width: 75px;
+  filter: invert(96%) sepia(5%) saturate(3160%) hue-rotate(304deg) brightness(91%) contrast(96%);
+}
+.focus-item h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.focus-item i {
+  font-size: 5px;
+  transform: rotate(45deg);
+}
+.focus-item p {
+  margin-top: 0;
+}
+
+
+/* ##############  section Guide ##############  */
+.guide {}
+.guide-inner {
+  width: 1300px;
+  margin: auto;
+}
+.guide-content {
+  overflow: hidden;
+}
+.guide-content > div {
+  float: left;
+}
+.guide-slider {
+  width: 40%;
+  text-align: center;
+}
+.guide-video {
+  width: 60%;
+}
+.slider-mockup {
+  display: inline-block;
+  position: relative;
+}
+.mockup-slider {
+  position: absolute;
+  width: 85%;
+  /* height 값 조절해서 border radius 조정 */
+  height: 550px;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.guide-video h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+.guide-video h1 span{
+  color: #eb4d4b;
+}
+.video-headline {
+  font-size: 34px;
+}
+.video-headline img {
+  /* 이미지를 수직 중앙에 오게 함 */
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.video-frame {
+  width: 530px;
+  height: 370px;
+  position: relative;
+}
+.video-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover; /* 이미지 들어오게 함 */
+  border-radius: 5px;
+}
+.video-frame .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+}
 
 
 
@@ -560,6 +666,38 @@ h1.slogan {
 
 
 
+
+
+/* ▦▦▦▦▦▦▦▦▦ Video Modal ▦▦▦▦▦▦▦▦▦ */
+.video-modal {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10000;
+  /* 요소들의 수직 위치를 z-index 속성으로 정합니다. 값은 정수이며, 숫자가 클 수록 위로 올라오고, 숫자가 작을 수록 아래로 내려갑니다. */
+}
+.close-modal {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-content iframe {
+  width: 800px;
+  height: 450px;
+}
 
 
 
@@ -571,6 +709,7 @@ h1.slogan {
 .slideshow * {
   outline: none;
 }
+
 
 /* Review Slider */
 .review-slider .slick-dots li {
@@ -602,4 +741,14 @@ h1.slogan {
 .review-slider .slick-next:before {
   transform: rotateY(180deg);
   display: block;
+}
+
+.mockup-slider .slick-arrow {
+  display: none !important;
+}
+.mockup-slider .slick-dots {
+  bottom: 10px;
+}
+.mockup-slider .slick-dots li {
+  margin: 0;
 }
