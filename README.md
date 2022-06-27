@@ -1,6 +1,6 @@
 # Starteup Mate
   
-![umzzal-01.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a33e0b9e-c5a3-4cdd-be20-9c3d006ec59e/umzzal-01.gif)
+![umzzal-01](https://user-images.githubusercontent.com/83990943/175841880-20d8a1e8-f5d3-4631-93fe-46317f5fd30e.gif)
 
 * `html`, `css` 중급 문법다지기
 * `Jquery` 기초 공부
