@@ -27,10 +27,30 @@ $('#typing').typeIt({
 	autoStart: true, // 자동 재생 사용
 	breakLines: false, // 줄 바꿈 사용안함
 });
+
+	/* Wow Scroll Reveal Animation */
+	wow = new WOW(
+		{
+			boxClass: 'wow',      // default
+			offset: 150,          // default
+			mobile: true,       // default
+	})
+	wow.init();
 })
 
 // faq Accordion
 $(function(){
+	/* Header Scroll Change */
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 50) {
+			$('header, .btn-top').addClass('active')
+		}
+		else {
+			$('header, .btn-top').removeClass('active')
+		}
+	})
+
+	/* Faq Accordion */
 	$('.faq-desc').eq(0).show()
 	$('.faq-title').click(function(){
 		$(this).next().stop().slideDown()

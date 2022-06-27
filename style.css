@@ -48,6 +48,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'NEXON Lv2 Gothic', sans-serif;
   font-size: 18px;
@@ -60,7 +63,7 @@ body.active {
   overflow: hidden;
 }
 section {
-  padding: 100px 0;
+  padding: 130px 0;
 }
 
 /* Common CSS */
@@ -86,11 +89,33 @@ section {
   font-size: 20px;
 }
 
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.5s;
+}
+.btn-top.active {
+  bottom: 20px;
+}
+
 /* ####################### Header ####################### */
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
+  transition: 0.5s;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.05);
 }
 .header-inner {
   width: 1300px;
@@ -167,6 +192,7 @@ header {
   background-color: #0abde3;
 }
 .btn.guide {
+  padding-top: 8px;
   background-color: #fff;
   color: #222;
 }
@@ -205,7 +231,7 @@ header {
 
 /* ################# section : ceo-access ################# */
 .ceo-access {
-  padding: 0;
+  padding-bottom: 0;
 }
 .ceo-inner,
 .access-inner {
@@ -365,10 +391,13 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 }
 
 /* ################# section : banner ################# */
-.feature {}
+.feature {
+  padding-bottom: 0;
+}
 .feature-inner {
   width: 1300px;
   margin: auto;
+  
 }
 .feature-content {
   overflow: hidden;
@@ -390,7 +419,8 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 
 /* ################# section : vision ################# */
 .vision {
-  padding: 0;
+  padding-bottom: 0;
+  padding-top: 150;
 }
 .vision-inner {}
 .vision-content {
@@ -970,4 +1000,49 @@ footer {
 }
 .mockup-slider .slick-dots li {
   margin: 0;
+}
+
+/*  ▦▦▦▦▦▦▦▦▦ Scroll Reveal CSS Animation ▦▦▦▦▦▦▦▦▦*/
+
+.ltr {
+  animation: ltr 0.5s linear both;
+}
+.rtl {
+  animation: rtl 0.5s linear both;
+}
+.utd {
+  animation: utd 0.5s linear both;
+}
+
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rtl {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes utd {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
