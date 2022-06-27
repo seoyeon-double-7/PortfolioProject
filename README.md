@@ -1,6 +1,6 @@
-# PortfolioProject
-
-## starteup mate 반응형 웹페이지 
+# Starteup Mate
+  
+![umzzal-01.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a33e0b9e-c5a3-4cdd-be20-9c3d006ec59e/umzzal-01.gif)
 
 * `html`, `css` 중급 문법다지기
 * `Jquery` 기초 공부
